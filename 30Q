@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+	int a[100],n,i,x,t=1;
+	printf("Enter The Number Of Values:");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		printf("Enter Number%d:",i+1);
+		scanf("%d",&a[i]);
+	}
+	printf("Enter the Value to search:");
+	scanf("%d",&x);
+	for(i=0;i<n;i++)
+	{
+		if(a[i]==x)
+		{
+			printf("The Value is Present at Position %d",i+1);
+			t=0;
+			break;
+		}
+	}
+	if(t==1)
+	{
+		printf("The Value is Not Present");
+	}
+}
