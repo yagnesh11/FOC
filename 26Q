@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+	int i=1,n,num,large=0;
+	printf("Enter the number of numbers:");
+	scanf("%d",&n);
+	while(i<=n)
+	{
+		printf("Enter Number%d:",i);
+		scanf("%d",&num);
+		if(num>large)
+		{
+			large=num;
+		}
+		i+=1;
+	}
+	printf("The Largest Number is:%d",large);
+}
