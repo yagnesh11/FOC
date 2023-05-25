@@ -1,0 +1,18 @@
+#include<Stdio.h>
+int main()
+{
+	int a,b,c,temp;
+	printf("Enter the first numbers:");
+	scanf("%d",&a);
+	printf("Enter the second numbers:");
+	scanf("%d",&b);
+	printf("Enter the third numbers:");
+	scanf("%d",&c);
+	{
+	temp = b;
+	b = a;
+	a = c;
+	c = temp;
+	}
+	printf("Numbers after swapping:%d,%d,%d",a,b,c);
+}
