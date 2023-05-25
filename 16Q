@@ -1,0 +1,17 @@
+#include<Stdio.h>
+int main()
+{
+	int starting_number,ending_number,sum=0,i;
+	float average=0;
+	printf("Enter the starting and ending numbers:");
+	scanf("%d%d",&starting_number,&ending_number);
+	
+	for(i=starting_number;i<=ending_number;i++)
+	{
+		sum=sum+i;
+	}
+	printf("Sum = %d\n",sum);
+	average = sum/(ending_number - starting_number + 1);
+	printf("Average = %f",average);
+	
+}
