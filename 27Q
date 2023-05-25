@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+int fact(int i)
+{
+	int f=1;
+	while(i!=0)
+	{
+		f*=i;
+		i--;
+	}
+	return f;
+}
+int main()
+{
+	int n,i,sign=1;
+	double x,sum=0;
+	printf("Enter The Value of X:");
+	scanf("%lf",&x);
+	printf("Enter the Number of Terms:");
+	scanf("%d",&n);
+	for(i=1;i<=2*n-1;i+=2)
+	{
+		sum+=sign*((pow(x,i))/(fact(i)));
+		sign*=-1;
+	}
+	printf("sum=%.4f",sum);
+}
