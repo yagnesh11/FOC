@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+	float num,bill=0;
+	
+	printf("Enter the water used(in cubic):");
+	scanf("%f",&num);
+	
+	if(num <= 1000)
+	{
+		bill = 15.00 * num;
+	}
+	else if(num > 1000 && num <= 2000)
+	{
+		bill = (15.00 * num) * 0.0175;
+	}
+	else if(num > 2000 && num <= 3000)
+	{
+		bill = (15.00 * num) * 0.02;
+	}
+	else
+	{
+		bill = (15.00 * num) * 70.00;
+	}
+	
+	printf("Bill amount = %f",bill);
+	
+}
